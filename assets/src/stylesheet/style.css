@@ -1,3 +1,4 @@
+
 /* css reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,7 +45,134 @@ table {
 	border-spacing: 0;
 }
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
 /* main css */
+body {
+  background: #000;
+}
+/* 
+======================
+--------Header Logo----
+======================= 
+*/
+.header{
+  height: 100px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.header img{
+  height: 100%;
+}
+
+
+/* 
+======================
+--------Navigation----
+======================= 
+*/
+.navigation{
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin: 50px auto;
+}
+/* .navItem {
+  float: left;
+  text-decoration:none;
+  position: r=======
+>>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265elative;
+  width: 20%;=======
+>>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265
+  display: bl=======
+>>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265ock;
+  height: 40p=======
+>>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265x;
+  line-height=======
+>>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265: 12px;
+  overflow: h=======
+>>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265idden;
+  z-index: 9;
+} */
+
+.navItem:hover .color {
+  top: 0;
+}
+.color {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  transition : all 0.3s ease-in-out;
+}
+
+.navItem.categories {
+  color: rgb(66, 217, 255);
+}
+.navItem.categories .color {
+    background:rgb(66, 217, 255);
+  }
+.navItem.trending {
+  color: rgb(128, 255, 204);
+}
+.navItem.trending .color {
+    background: rgb(128, 255, 204);
+}
+    
+.navItem.random {
+  color: rgb(153, 51, 255);
+}
+.navItem.random .color {
+  background: rgb(153, 51, 255):
+}
+
+.navItem.upload {
+  color: rgb(255, 244, 104);
+}
+.navItem.upload .color {
+  background:rgb(255, 244, 104);
+}
+.navItem.about {
+  color: rgb(255, 102, 102);
+}
+.navItem.about .color {
+    background: rgb(255, 102, 102);
+}
+.navItem > img {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+}
+.navItem:hover {
+  color: #fff;
+}
+.navItem:hover  img {
+  top: 0;
+  z-index: -3;
+}
+    
+/* 
+======================
+--------footer----
+======================= 
+*/  
+
 footer{
 	height: 250px;
 	width: 100%;
