@@ -1,9 +1,14 @@
-.cf:before , .cf:after{
-  content: " ";
-  display: table;
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
-.cf{
+.cf:after {
+    clear: both;
+}
 
+.cf {
+    *zoom: 1;
 }
 body {
   background: #000;
@@ -13,10 +18,12 @@ body {
 --------Header Logo----
 ======================= 
 */
-header{
+.header{
   height: 100px;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
-header img{
+.header img{
   height: 100%;
 }
 
@@ -31,14 +38,14 @@ header img{
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: 50px auto;
 }
 .navItem {
   float: left;
   text-decoration: none;
   position: relative;
-  width: 14%;
+  width: 20%;
   display: block;
   height: 40px;
   line-height: 12px;
