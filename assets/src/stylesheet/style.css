@@ -1,0 +1,110 @@
+.cf:before , .cf:after{
+  content: " ";
+  display: table;
+}
+.cf{
+
+}
+body {
+  background: #000;
+}
+/* 
+======================
+--------Header Logo----
+======================= 
+*/
+header{
+  height: 100px;
+}
+header img{
+  height: 100%;
+}
+
+
+/* 
+======================
+--------Navigation----
+======================= 
+*/
+.navigation{
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  width: 70%;
+  margin: 50px auto;
+}
+.navItem {
+  float: left;
+  text-decoration: none;
+  position: relative;
+  width: 14%;
+  display: block;
+  height: 40px;
+  line-height: 12px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.navItem:hover .color {
+  top: 0;
+}
+.color {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  transition : all 0.3s ease-in-out;
+}
+
+.navItem.categories {
+  color: rgb(66, 217, 255);
+}
+.navItem.categories .color {
+    background:rgb(66, 217, 255);
+  }
+.navItem.trending {
+  color: rgb(128, 255, 204);
+}
+.navItem.trending .color {
+    background: rgb(128, 255, 204);
+}
+    
+.navItem.random {
+  color: rgb(153, 51, 255);
+}
+.navItem.random .color {
+  background: rgb(153, 51, 255):
+}
+
+.navItem.upload {
+  color: rgb(255, 244, 104);
+}
+.navItem.upload .color {
+  background:rgb(255, 244, 104);
+}
+.navItem.about {
+  color: rgb(255, 102, 102);
+}
+.navItem.about .color {
+    background: rgb(255, 102, 102);
+}
+.navItem > img {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+}
+.navItem:hover {
+  color: #fff;
+}
+.navItem:hover  img {
+  top: 0;
+  z-index: -3;
+}
+    
+  
+

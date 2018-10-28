@@ -1,0 +1,98 @@
+body {
+  background: #000;
+}
+
+#browsebar {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  width: 967px;
+  margin: 50px auto;
+}
+
+#browsebar a {
+  float: left;
+  text-decoration: none;
+  position: relative;
+  width: 180px;
+  display: block;
+  height: 40px;
+  line-height: 12px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+#browsebar a .color {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  display: block;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#browsebar a:hover .color {
+  top: 0;
+}
+
+#browsebar a.categories {
+  color: #42d9ff;
+}
+
+#browsebar a.categories .color {
+  background: #42d9ff;
+}
+
+#browsebar a.reaction-gifs {
+  color: #80ffcc;
+}
+
+#browsebar a.reaction-gifs .color {
+  background: #80ffcc;
+}
+
+#browsebar a.artists {
+  color: #9933ff;
+}
+
+#browsebar a.artists .color {
+  background: #9933ff;
+}
+
+#browsebar a.giphy-tv {
+  color: #fff468;
+}
+
+#browsebar a.giphy-tv .color {
+  background: #fff468;
+}
+
+#browsebar a.favorites {
+  color: #ff6666;
+}
+
+#browsebar a.favorites .color {
+  background: #ff6666;
+}
+
+#browsebar a > img {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+}
+
+#browsebar a:hover {
+  color: #fff;
+}
+
+#browsebar a:hover > img {
+  top: 0;
+  z-index: -3;
+}
+/*# sourceMappingURL=arc.css.map */
