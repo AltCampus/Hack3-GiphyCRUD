@@ -89,23 +89,17 @@ body {
   width: 100%;
   margin: 50px auto;
 }
-/* .navItem {
-  float: left;
-  text-decoration:none;
-  position: r=======
->>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265elative;
-  width: 20%;=======
->>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265
-  display: bl=======
->>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265ock;
-  height: 40p=======
->>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265x;
-  line-height=======
->>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265: 12px;
-  overflow: h=======
->>>>>>> d23c99af0e95b60afb8a38894bfb0033f4c0e265idden;
-  z-index: 9;
-} */
+.navItem {
+      float: left;
+    text-decoration: none;
+    position: relative;
+    width: 180px;
+    display: block;
+    height: 40px;
+    line-height: 12px;
+    overflow: hidden;
+    z-index: 9;
+}
 
 .navItem:hover .color {
   top: 0;
