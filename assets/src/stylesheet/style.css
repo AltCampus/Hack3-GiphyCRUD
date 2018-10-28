@@ -82,7 +82,7 @@ body {
 ======================= 
 */
 .navigation{
-  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
@@ -131,7 +131,7 @@ body {
   color: rgb(153, 51, 255);
 }
 .navItem.random .color {
-  background: rgb(153, 51, 255):
+  background: rgb(153, 51, 255);
 }
 
 .navItem.upload {
@@ -173,7 +173,7 @@ footer{
 	background: rgb(14, 12, 12);
 	position: absolute;
 }
-.container{
+.containerf{
     display: grid;
     grid-template-columns: 3fr 2fr;
 } 
