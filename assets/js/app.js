@@ -10,10 +10,10 @@ var trendingBtn = document.querySelector(".trending");
 let addImage = document.querySelector('.one');
 let favBtn = document.querySelector('.favc')
 let printArr = [];
-let favArr = JSON.parse(localStorage("fav")) || [];
+let favArr = JSON.parse(localStorage.getItem("fav")) || [];
 
 function displayInfo(userSearch, arr = []){
-
+  addImage.innerHTML = " ";
   var completeUrl =  url + key + query;
   fetch(completeUrl).then(data =>  data.json()).then( res => {
     for (let i = 0; i < 20; i++) {
@@ -65,10 +65,12 @@ function btnAct(e) {
     var id = e.target.dataset.id;
     if (favArr.includes(printArr[id])) return;
     favArr.push(printArr[id]);
+    localStorage.setItem(JSON.stringify('fav' , favArr));
   }
   if (e.target.classList.contains('del')) {
     var id = e.target.dataset.id;
     favArr.splice(id,1);
+    localStorage.setItem(JSON.stringify('fav', favArr));
     // dispFav(e);
   }
 }
